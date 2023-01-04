@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+
 const NotesSchema = new Schema({
     title:{
         type: String,
