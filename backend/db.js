@@ -10,7 +10,7 @@ mongoose.set('strictQuery', true);
 const connectToMongo = ()=>{
     //mongoose.connect(mongoURI)
     const port = 8000;
-    mongoose.connect('mongodb://127.0.0.1/contactDance', {useNewUrlParser: true})
+    mongoose.connect('mongodb://127.0.0.1/inotebook', {useNewUrlParser: true})
         .then(() => {
             console.log('Connected to MongoDB');
           })
