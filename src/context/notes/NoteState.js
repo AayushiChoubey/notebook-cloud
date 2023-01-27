@@ -17,7 +17,6 @@ const NoteState = (props) => {
       }
     });
     const json = await response.json()
-    console.log(json)
     setNotes(json)
   }
 
@@ -36,15 +35,15 @@ const NoteState = (props) => {
      const json = response.json();
 
     console.log("Adding a new note")
-    const note = {
-      "_id": json._id,
-      "user": json.user,
-      "title": title,
-      "description": description,
-      "tag": tag,
-      "date": json.date,
-      "__v": 0
-    };
+    // const note = {
+    //   "_id": json._id,
+    //   "user": json.user,
+    //   "title": title,
+    //   "description": description,
+    //   "tag": tag,
+    //   "date": json.date,
+    //   "__v": 0
+    // };
     setNotes(notes.concat(json))
   }
 
